@@ -1,0 +1,388 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.8s, color 0.8s;
+            display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное направление для содержимого */
+    min-height: 100vh;
+        }
+header{
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+footer{
+    background-color: #333;
+            color: white;
+            text-align: center;  
+            height: 100px;
+            margin-top:auto;
+}
+nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+h1, h2 {
+            color: #2c3e50;
+        }
+img {
+    width: 1200px;
+    height: 800px;
+        }
+figure {
+            text-align: center;
+        }
+
+#container{
+    display: flex;
+            justify-content: center; 
+            align-items: center; 
+            
+}
+#carouselExampleCaptions {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1200px;
+    height: 800px;
+}
+#carouselExampleCaptions2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1200px;
+    height: 800px;
+}
+#carouselExampleCaptions3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1200px;
+    height: 800px;
+}
+#carouselExampleCaptions4 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1200px;
+    height: 800px;
+}
+.card-img-top{
+    width: 500px;
+    height: 300px;
+}
+.image-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+.footer2{
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+}
+.footer3{
+    height: 200px;
+    width: 100%;
+    background-color: #1e3d58;
+            color: white;
+}
+.footer4{
+    position: fixed; /* Фиксируем футер внизу */
+    bottom: 0; /* Устанавливаем его внизу страницы */
+    left: 0; /* Прижимаем к левому краю */
+    right: 0;
+    height: 200px;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.image-container:hover img {
+    opacity: 0.5;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+.kitchen{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container:hover .overlay p{
+font-size: 50px;
+}
+.form-container {
+    margin-top: 300px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button1 {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button4 {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: black;
+    opacity: 70%;
+  }
+.dark-theme  .button4:hover {
+    background-color: gray;
+    opacity: 70%;
+  }
+  
+  #greeting {
+    display: flex;
+    justify-content: center;
+    color: Black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fade 3s ease-in-out forwards;
+  }
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+  }
+
+  body.dark-theme {
+    background-color:#2c2c2c;
+    color: #ffffff;
+}
+.dark-theme .footer3{
+    background-color:#1a1a1a;
+}
+.dark-theme span{
+    color: white;
+}
+.dark-theme #greeting{
+    color: white;
+}
+
+.dark-theme .button1,
+.dark-theme .button2 {
+    background-color: #555555;
+    color: #ffffff;
+}
+.dark-theme .button3 {
+    background-color: white;
+    color: #1a1a1a;
+}
+.dark-theme .button4{
+    background-color: #1a1a1a;
+}
+.button2{
+    background-color: #f0a500;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            border: none;
+            transition: background-color 0.3s;
+}
+.buttonimg{
+    width: 50px;
+    height: 50px;
+}
+.content-area{
+    display: flex;
+    justify-content: center;
+}
+.divbtn{
+    display: flex;
+    justify-content: center;
+}
+/* .button3{
+    color:white;
+    background-color: #333;
+    width: 150px;
+    height: 80px;
+    border-radius: 15%;
+} */
+
+.button3 {
+    color: white;
+    background-color: #1a1a1a;
+    width: 150px;
+    height: 80px;
+    border-radius: 15%;
+    border: none; /* Убираем стандартную рамку */
+    font-size: 15px; /* Увеличиваем размер шрифта */
+    font-weight: bold; /* Увеличиваем жирность шрифта */
+    cursor: pointer; /* Указатель курсора */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+/* Эффект при наведении */
+.button3:hover {
+    transform: translateY(-2px); /* Немного поднимаем кнопку */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Увеличиваем тень */
+}
+
+/* Эффект при нажатии */
+.button3:active {
+    transform: translateY(2px); /* Опускаем кнопку при нажатии */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Уменьшаем тень */
+}
+.star-rating {
+    font-size: 40px;
+    color: gray; 
+}
+
+.star {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star.selected {
+    color: gold; 
+}
+
+.star:hover {
+    color: lightyellow; 
+}
+.ratingdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navbar {
+    background-color: #1e3d58 !important; 
+
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #f0a500 !important;
+}
+
+.dark-theme .navbar {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+.dark-theme .navbar .nav-link {
+    color: #fff !important;
+}
+
+.dark-theme .navbar .nav-link:hover {
+    color: #ccc !important;
+}
+.dark-theme .navbar-brand{
+    color: #fff;
+}
+.navbar-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dark-theme .navbar-text{
+    background-color: white !important; 
+    color: #1a1a1a !important;
+}
+.main-content {
+    flex: 1; /* Основной контент занимает оставшееся пространство */
+}
+#vhod{
+    margin: 0;
+}
+
+  
